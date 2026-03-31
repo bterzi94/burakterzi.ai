@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Styleguide — burakterzi.de</title>
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/pages/styleguide.css">
+</head>
+<body>
+
+  <!-- ─── NAV ──────────────────────────────────────────── -->
+  <nav class="sg-nav">
+    <span class="sg-nav__logo">burakterzi.de</span>
+    <span class="sg-nav__label">Styleguide</span>
+  </nav>
+
+  <main class="sg-main">
+
+    <!-- ─── HERO ──────────────────────────────────────── -->
+    <section class="sg-hero">
+      <p class="sg-hero__eyebrow">Design System</p>
+      <h1 class="sg-hero__title">Style&shy;guide</h1>
+      <p class="sg-hero__sub">Alle Design-Tokens, Typografie, Farben und Komponenten für <strong>burakterzi.de</strong>. Stil inspiriert von <a href="https://poch.studio" target="_blank" rel="noopener">poch.studio</a>.</p>
+    </section>
+
+    <!-- ─── FARBEN ────────────────────────────────────── -->
+    <section class="sg-section">
+      <h2 class="sg-section__title">01 — Farben</h2>
+      <div class="sg-divider"></div>
+
+      <h3 class="sg-sub-title">Backgrounds</h3>
+      <div class="sg-color-grid">
+        <div class="sg-color-card">
+          <div class="sg-color-swatch" style="background:#000000;border:1px solid #333;"></div>
+          <span class="sg-color-name">Background</span>
+          <span class="sg-color-hex">#000000</span>
+          <span class="sg-color-var">--color-bg</span>
+        </div>
+        <div class="sg-color-card">
+          <div class="sg-color-swatch" style="background:#111111;"></div>
+          <span class="sg-color-name">Surface</span>
+          <span class="sg-color-hex">#111111</span>
+          <span class="sg-color-var">--color-surface</span>
+        </div>
+        <div class="sg-color-card">
+          <div class="sg-color-swatch" style="background:#ffffff0d;border:1px solid #333;"></div>
+          <span class="sg-color-name">Overlay</span>
+          <span class="sg-color-hex">#ffffff0d</span>
+          <span class="sg-color-var">--color-overlay</span>
+        </div>
+      </div>
+
+      <h3 class="sg-sub-title">Akzentfarben</h3>
+      <div class="sg-color-grid">
+        <div class="sg-color-card">
+          <div class="sg-color-swatch" style="background:#fff6c6;"></div>
+          <span class="sg-color-name">Cream</span>
+          <span class="sg-color-hex">#fff6c6</span>
+          <span class="sg-color-var">--color-accent-cream</span>
+        </div>
+        <div class="sg-color-card">
+          <div class="sg-color-swatch" style="background:#ffa5c6;"></div>
+          <span class="sg-color-name">Pink</span>
+          <span class="sg-color-hex">#ffa5c6</span>
+          <span class="sg-color-var">--color-accent-pink</span>
+        </div>
+        <div class="sg-color-card">
+          <div class="sg-color-swatch" style="background:#416afc;"></div>
+          <span class="sg-color-name">Blue</span>
+          <span class="sg-color-hex">#416afc</span>
+          <span class="sg-color-var">--color-accent-blue</span>
+        </div>
+      </div>
+
+      <h3 class="sg-sub-title">Text</h3>
+      <div class="sg-color-grid">
+        <div class="sg-color-card">
+          <div class="sg-color-swatch" style="background:#ffffff;"></div>
+          <span class="sg-color-name">Text Primary</span>
+          <span class="sg-color-hex">#ffffff</span>
+          <span class="sg-color-var">--color-text</span>
+        </div>
+        <div class="sg-color-card">
+          <div class="sg-color-swatch" style="background:#ffffff80;border:1px solid #333;"></div>
+          <span class="sg-color-name">Text Muted</span>
+          <span class="sg-color-hex">#ffffff80</span>
+          <span class="sg-color-var">--color-text-muted</span>
+        </div>
+        <div class="sg-color-card">
+          <div class="sg-color-swatch" style="background:#ffffff4d;border:1px solid #333;"></div>
+          <span class="sg-color-name">Card Border</span>
+          <span class="sg-color-hex">#ffffff4d</span>
+          <span class="sg-color-var">--color-card-border</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── TYPOGRAFIE ────────────────────────────────── -->
+    <section class="sg-section">
+      <h2 class="sg-section__title">02 — Typografie</h2>
+      <div class="sg-divider"></div>
+
+      <!-- Font Families -->
+      <h3 class="sg-sub-title">Schriftarten</h3>
+      <div class="sg-type-families">
+        <div class="sg-type-family">
+          <p class="sg-type-family__label">Display — Syne</p>
+          <p class="sg-type-family__sample" style="font-family:'Syne',sans-serif;font-weight:800;">
+            Aa Bb Cc 0123
+          </p>
+          <p class="sg-type-family__meta">Syne · Weight 400–800 · Headings, Display</p>
+        </div>
+        <div class="sg-type-family">
+          <p class="sg-type-family__label">Body — Plus Jakarta Sans</p>
+          <p class="sg-type-family__sample" style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:400;">
+            Aa Bb Cc 0123
+          </p>
+          <p class="sg-type-family__meta">Plus Jakarta Sans · Weight 300–700 · Fließtext, UI</p>
+        </div>
+        <div class="sg-type-family">
+          <p class="sg-type-family__label">Decorative — Lacquer</p>
+          <p class="sg-type-family__sample" style="font-family:'Lacquer',cursive;font-weight:400;">
+            Aa Bb Cc 0123
+          </p>
+          <p class="sg-type-family__meta">Lacquer · Weight 400 · Akzente, Zitate</p>
+        </div>
+      </div>
+
+      <!-- Type Scale -->
+      <h3 class="sg-sub-title">Type Scale</h3>
+      <div class="sg-type-scale">
+        <div class="sg-type-row">
+          <span class="sg-type-meta">96px / --text-4xl</span>
+          <span class="sg-type-sample" style="font-size:96px;line-height:1;font-family:'Syne',sans-serif;font-weight:800;">Display</span>
+        </div>
+        <div class="sg-divider sg-divider--thin"></div>
+        <div class="sg-type-row">
+          <span class="sg-type-meta">64px / --text-3xl</span>
+          <span class="sg-type-sample" style="font-size:64px;line-height:1.05;font-family:'Syne',sans-serif;font-weight:800;">Heading 1</span>
+        </div>
+        <div class="sg-divider sg-divider--thin"></div>
+        <div class="sg-type-row">
+          <span class="sg-type-meta">48px / --text-2xl</span>
+          <span class="sg-type-sample" style="font-size:48px;line-height:1.1;font-family:'Syne',sans-serif;font-weight:700;">Heading 2</span>
+        </div>
+        <div class="sg-divider sg-divider--thin"></div>
+        <div class="sg-type-row">
+          <span class="sg-type-meta">32px / --text-xl</span>
+          <span class="sg-type-sample" style="font-size:32px;line-height:1.2;font-family:'Syne',sans-serif;font-weight:700;">Heading 3</span>
+        </div>
+        <div class="sg-divider sg-divider--thin"></div>
+        <div class="sg-type-row">
+          <span class="sg-type-meta">24px / --text-lg</span>
+          <span class="sg-type-sample" style="font-size:24px;line-height:1.3;font-family:'Syne',sans-serif;font-weight:600;">Subheading</span>
+        </div>
+        <div class="sg-divider sg-divider--thin"></div>
+        <div class="sg-type-row">
+          <span class="sg-type-meta">18px / --text-md</span>
+          <span class="sg-type-sample" style="font-size:18px;line-height:1.5;font-family:'Plus Jakarta Sans',sans-serif;">Lead Text</span>
+        </div>
+        <div class="sg-divider sg-divider--thin"></div>
+        <div class="sg-type-row">
+          <span class="sg-type-meta">16px / --text-base</span>
+          <span class="sg-type-sample" style="font-size:16px;line-height:1.6;font-family:'Plus Jakarta Sans',sans-serif;">Body Text — Fließtext für Absätze und längere Inhalte.</span>
+        </div>
+        <div class="sg-divider sg-divider--thin"></div>
+        <div class="sg-type-row">
+          <span class="sg-type-meta">13px / --text-sm</span>
+          <span class="sg-type-sample" style="font-size:13px;line-height:1.5;font-family:'Plus Jakarta Sans',sans-serif;">Caption · Label · Metadaten</span>
+        </div>
+        <div class="sg-divider sg-divider--thin"></div>
+        <div class="sg-type-row">
+          <span class="sg-type-meta">Lacquer / decorative</span>
+          <span class="sg-type-sample" style="font-size:48px;font-family:'Lacquer',cursive;color:var(--color-accent-cream);">Call us!</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── BUTTONS ────────────────────────────────────── -->
+    <section class="sg-section">
+      <h2 class="sg-section__title">03 — Buttons & CTAs</h2>
+      <div class="sg-divider"></div>
+
+      <div class="sg-component-row">
+        <!-- Primary -->
+        <div class="sg-component-item">
+          <button class="btn btn--primary">Get This Package</button>
+          <span class="sg-component-label">Primary</span>
+        </div>
+        <!-- Secondary -->
+        <div class="sg-component-item">
+          <button class="btn btn--secondary">View Work</button>
+          <span class="sg-component-label">Secondary</span>
+        </div>
+        <!-- Outline -->
+        <div class="sg-component-item">
+          <button class="btn btn--outline">Learn More</button>
+          <span class="sg-component-label">Outline</span>
+        </div>
+        <!-- Ghost -->
+        <div class="sg-component-item">
+          <button class="btn btn--ghost">Contact →</button>
+          <span class="sg-component-label">Ghost</span>
+        </div>
+        <!-- Cream Pill (poch.studio nav style) -->
+        <div class="sg-component-item">
+          <button class="btn btn--cream-pill">Book an Intro Call</button>
+          <span class="sg-component-label">Cream Pill (Nav-Style)</span>
+        </div>
+        <!-- Pink accent -->
+        <div class="sg-component-item">
+          <button class="btn btn--pink">Jetzt anfragen</button>
+          <span class="sg-component-label">Accent Pink</span>
+        </div>
+      </div>
+
+      <!-- States -->
+      <h3 class="sg-sub-title">States</h3>
+      <div class="sg-component-row">
+        <div class="sg-component-item">
+          <button class="btn btn--primary" disabled>Disabled</button>
+          <span class="sg-component-label">Disabled</span>
+        </div>
+        <div class="sg-component-item">
+          <button class="btn btn--primary btn--loading">
+            <span class="btn__spinner"></span> Wird gesendet…
+          </button>
+          <span class="sg-component-label">Loading</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── BADGES & TAGS ──────────────────────────────── -->
+    <section class="sg-section">
+      <h2 class="sg-section__title">04 — Badges & Tags</h2>
+      <div class="sg-divider"></div>
+
+      <div class="sg-component-row sg-component-row--wrap">
+        <span class="badge badge--cream">Webdesign</span>
+        <span class="badge badge--pink">Branding</span>
+        <span class="badge badge--blue">UI/UX</span>
+        <span class="badge badge--outline">Strategy</span>
+        <span class="badge badge--ghost">Development</span>
+
+        <!-- poch-style category tag -->
+        <span class="tag tag--category">
+          <span class="tag__dot"></span>Branding · Motion · Web
+        </span>
+      </div>
+    </section>
+
+    <!-- ─── KARTEN ─────────────────────────────────────── -->
+    <section class="sg-section">
+      <h2 class="sg-section__title">05 — Karten</h2>
+      <div class="sg-divider"></div>
+
+      <div class="sg-card-grid">
+
+        <!-- Project Card (poch-style) -->
+        <div class="card card--project">
+          <div class="card__image card__image--placeholder">
+            <span class="card__image-label">320 × 320</span>
+          </div>
+          <div class="card__meta">
+            <span class="tag tag--category">
+              <span class="tag__dot"></span>Branding · Web
+            </span>
+            <span class="badge badge--outline">2025</span>
+          </div>
+          <h3 class="card__title">Projektname</h3>
+          <p class="card__desc">Kurze Beschreibung des Projekts und was dabei entstanden ist.</p>
+        </div>
+
+        <!-- Pricing Card (poch-style dark border) -->
+        <div class="card card--pricing">
+          <div class="card__pricing-header">
+            <span class="badge badge--cream">Sprint</span>
+            <p class="card__pricing-tagline">When you know what you need.</p>
+          </div>
+          <div class="card__pricing-list">
+            <div class="card__pricing-item">
+              <span class="tag__dot tag__dot--pink"></span>
+              <span>Base Identity</span>
+            </div>
+            <div class="card__pricing-item">
+              <span class="tag__dot tag__dot--pink"></span>
+              <span>Landing Page</span>
+            </div>
+            <div class="card__pricing-item">
+              <span class="tag__dot tag__dot--pink"></span>
+              <span>One Revision</span>
+            </div>
+          </div>
+          <div class="card__pricing-price">$999</div>
+          <button class="btn btn--primary" style="width:100%;">Get This Package</button>
+        </div>
+
+        <!-- Highlight Card (cream bg) -->
+        <div class="card card--cream">
+          <p class="card__cream-label">Services</p>
+          <h3 class="card__cream-title">We do everything you need to make your brand bloom.</h3>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ─── FORMULAR ──────────────────────────────────── -->
+    <section class="sg-section">
+      <h2 class="sg-section__title">06 — Formular</h2>
+      <div class="sg-divider"></div>
+
+      <form class="sg-form" novalidate>
+        <div class="form-field">
+          <label class="form-label" for="sg-name">Name</label>
+          <input class="form-input" id="sg-name" type="text" placeholder="Max Mustermann" autocomplete="name">
+        </div>
+        <div class="form-field">
+          <label class="form-label" for="sg-email">E-Mail</label>
+          <input class="form-input" id="sg-email" type="email" placeholder="mail@beispiel.de" autocomplete="email">
+        </div>
+        <div class="form-field">
+          <label class="form-label" for="sg-package">Paket</label>
+          <select class="form-input form-select" id="sg-package">
+            <option value="">Bitte wählen…</option>
+            <option>Sprint — $999</option>
+            <option>Start Up — $2.000</option>
+            <option>The Identity — $3.000</option>
+            <option>Bombastic — $6.000+</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label class="form-label" for="sg-message">Nachricht</label>
+          <textarea class="form-input form-textarea" id="sg-message" placeholder="Erzähl mir von deinem Projekt…" rows="4"></textarea>
+        </div>
+        <!-- Error state example -->
+        <div class="form-field">
+          <label class="form-label" for="sg-error">Fehler-Zustand</label>
+          <input class="form-input form-input--error" id="sg-error" type="text" value="ungültig" aria-describedby="sg-error-msg">
+          <span class="form-error" id="sg-error-msg" role="alert">Bitte gib eine gültige Eingabe an.</span>
+        </div>
+        <button class="btn btn--primary" type="submit">Submit →</button>
+      </form>
+    </section>
+
+    <!-- ─── EFFEKTE ────────────────────────────────────── -->
+    <section class="sg-section">
+      <h2 class="sg-section__title">07 — Effekte & Oberflächen</h2>
+      <div class="sg-divider"></div>
+
+      <div class="sg-effects-grid">
+
+        <!-- Glassmorphism Nav -->
+        <div class="sg-effect-item">
+          <div class="effect-glass">
+            <span>Glassmorphism Nav</span>
+            <button class="btn btn--cream-pill" style="pointer-events:none;">Book a Call</button>
+          </div>
+          <span class="sg-component-label">backdrop-filter: blur(50px) · bg: #fff6c6</span>
+        </div>
+
+        <!-- Card mit Border -->
+        <div class="sg-effect-item">
+          <div class="effect-card-border">
+            <p style="color:var(--color-text-muted);font-size:13px;">$999</p>
+            <p style="font-size:18px;font-weight:600;">Sprint Package</p>
+          </div>
+          <span class="sg-component-label">border: 1px solid #ffffff4d · border-radius: 20px</span>
+        </div>
+
+        <!-- Hover Inversion -->
+        <div class="sg-effect-item">
+          <div class="effect-hover-card">
+            Hover mich
+          </div>
+          <span class="sg-component-label">Hover: bg → cream, text → black</span>
+        </div>
+
+        <!-- Blur overlay -->
+        <div class="sg-effect-item">
+          <div class="effect-blur-surface">
+            <span>Frosted Surface</span>
+          </div>
+          <span class="sg-component-label">backdrop-filter: blur(10px) · bg: rgba(255,255,255,0.05)</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ─── SPACING ────────────────────────────────────── -->
+    <section class="sg-section">
+      <h2 class="sg-section__title">08 — Spacing Scale</h2>
+      <div class="sg-divider"></div>
+
+      <div class="sg-spacing-list">
+        <div class="sg-spacing-row"><div class="sg-spacing-bar" style="width:4px;"></div><span>4px — --space-1</span></div>
+        <div class="sg-spacing-row"><div class="sg-spacing-bar" style="width:8px;"></div><span>8px — --space-2</span></div>
+        <div class="sg-spacing-row"><div class="sg-spacing-bar" style="width:16px;"></div><span>16px — --space-3</span></div>
+        <div class="sg-spacing-row"><div class="sg-spacing-bar" style="width:24px;"></div><span>24px — --space-4</span></div>
+        <div class="sg-spacing-row"><div class="sg-spacing-bar" style="width:32px;"></div><span>32px — --space-5</span></div>
+        <div class="sg-spacing-row"><div class="sg-spacing-bar" style="width:48px;"></div><span>48px — --space-6</span></div>
+        <div class="sg-spacing-row"><div class="sg-spacing-bar" style="width:64px;"></div><span>64px — --space-7</span></div>
+        <div class="sg-spacing-row"><div class="sg-spacing-bar" style="width:96px;"></div><span>96px — --space-8</span></div>
+        <div class="sg-spacing-row"><div class="sg-spacing-bar" style="width:140px;"></div><span>140px — --space-9 (Section Gap)</span></div>
+      </div>
+    </section>
+
+    <!-- ─── BORDER RADIUS ─────────────────────────────── -->
+    <section class="sg-section">
+      <h2 class="sg-section__title">09 — Border Radius</h2>
+      <div class="sg-divider"></div>
+
+      <div class="sg-component-row">
+        <div class="sg-component-item">
+          <div class="radius-demo" style="border-radius:6px;">xs · 6px</div>
+          <span class="sg-component-label">--radius-xs · Tags, Chips</span>
+        </div>
+        <div class="sg-component-item">
+          <div class="radius-demo" style="border-radius:10px;">sm · 10px</div>
+          <span class="sg-component-label">--radius-sm · Bilder, Icons</span>
+        </div>
+        <div class="sg-component-item">
+          <div class="radius-demo" style="border-radius:20px;">card · 20px</div>
+          <span class="sg-component-label">--radius-card · Karten, Panels</span>
+        </div>
+        <div class="sg-component-item">
+          <div class="radius-demo" style="border-radius:100px;width:160px;">pill · 100px</div>
+          <span class="sg-component-label">--radius-pill · Buttons, Nav</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── ICONS (Placeholder) ───────────────────────── -->
+    <section class="sg-section">
+      <h2 class="sg-section__title">10 — Icons</h2>
+      <div class="sg-divider"></div>
+      <p class="sg-note">Icon-Set: <strong>Lucide Icons</strong> (SVG, Stroke-Width 1.5–2px, konsistent). Keine Emojis als strukturelle Icons.</p>
+      <div class="sg-component-row">
+        <div class="sg-component-item">
+          <svg class="sg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          <span class="sg-component-label">arrow-right</span>
+        </div>
+        <div class="sg-component-item">
+          <svg class="sg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          <span class="sg-component-label">message-square</span>
+        </div>
+        <div class="sg-component-item">
+          <svg class="sg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+          <span class="sg-component-label">clock</span>
+        </div>
+        <div class="sg-component-item">
+          <svg class="sg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.15 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.06 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16z"/></svg>
+          <span class="sg-component-label">phone</span>
+        </div>
+        <div class="sg-component-item">
+          <svg class="sg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          <span class="sg-component-label">instagram</span>
+        </div>
+        <div class="sg-component-item">
+          <svg class="sg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+          <span class="sg-component-label">linkedin</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ─── FOOTER ────────────────────────────────────────── -->
+  <footer class="sg-footer">
+    <span>burakterzi.de — Styleguide</span>
+    <span style="color:var(--color-text-muted);">Erstellt 2025 · Stil nach poch.studio</span>
+  </footer>
+
+</body>
+</html>
