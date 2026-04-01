@@ -241,6 +241,10 @@ body {
   position: absolute;
   inset: 0;
   background: linear-gradient(to top, #343434 0%, transparent 33%);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  -webkit-mask: linear-gradient(to top, black 0%, transparent 33%);
+  mask: linear-gradient(to top, black 0%, transparent 33%);
   pointer-events: none;
   z-index: 1;
 }
