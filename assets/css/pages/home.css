@@ -242,6 +242,7 @@ body {
   inset: 0;
   background: linear-gradient(to top, #343434 0%, transparent 33%);
   pointer-events: none;
+  z-index: 1;
 }
 
 
