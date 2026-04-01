@@ -36,7 +36,7 @@ body {
   align-items: center;
   justify-content: center;
   max-height: 20dvh;
-  background: linear-gradient(135deg, #1c1c1c 0%, #141414 100%);
+  background: transparent;
   border-radius: var(--radius-card);
   overflow: hidden;
   padding: 0.5rem;
