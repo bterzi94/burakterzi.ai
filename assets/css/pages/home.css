@@ -44,15 +44,38 @@ body {
 /* ── Avatar ─────────────────────────────────── */
 .profile-card__avatar {
   flex-shrink: 0;
+  position: relative;
   width: clamp(70px, 18vw, 100px);
   height: clamp(70px, 18vw, 100px);
   border-radius: 50%;
-  overflow: hidden;
-  padding: 2.5px;
-  background: linear-gradient(135deg, #7c3aed, #a78bfa, #6d28d9, #c4b5fd);
+}
+
+.profile-card__avatar::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: 50%;
+  background: conic-gradient(from 0deg, #a78bfa, #c4b5fd, #818cf8, #7c3aed, #a78bfa);
+  animation: ring-spin 3s linear infinite;
+  z-index: 0;
+}
+
+.profile-card__avatar::after {
+  content: '';
+  position: absolute;
+  inset: 2px;
+  border-radius: 50%;
+  background: #000;
+  z-index: 1;
+}
+
+@keyframes ring-spin {
+  to { transform: rotate(360deg); }
 }
 
 .avatar__img {
+  position: relative;
+  z-index: 2;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -458,72 +481,22 @@ body {
 /* ── Desktop ────────────────────────────────── */
 @media (min-width: 1024px) {
   .page {
-    display: grid;
-    grid-template-columns: 280px 1fr;
-    grid-template-rows: auto 1fr;
-    grid-template-areas:
-      "hero services"
-      "hero projects";
-    max-width: 1000px;
-    height: 100dvh;
-    overflow: hidden;
+    max-width: 860px;
     padding: 32px;
     padding-bottom: calc(40px + 44px + 32px);
-    gap: 20px;
   }
 
-  .hero     { grid-area: hero; }
-  .services { grid-area: services; }
-  .projects { grid-area: projects; }
-
-  /* Profile card: vertikal, volle Höhe */
-  .profile-card {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    height: 100%;
-    background: #0a0a0f;
-    border: 1px solid #ffffff0d;
-    border-radius: var(--radius-card);
-    padding: 32px 24px;
-    gap: 1.25rem;
-    justify-content: center;
-  }
-
-  .profile-card__avatar {
-    width: 110px;
-    height: 110px;
-  }
-
-  .profile-card__body {
-    align-items: center;
-    text-align: center;
-    gap: 0.5rem;
-  }
-
-  .profile-card__name { font-size: 22px; }
-  .profile-card__title { font-size: 13px; white-space: normal; text-align: center; }
-  .profile-card__badges { justify-content: center; }
-
-  /* Projects: 2 Spalten nebeneinander */
   .projects {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 16px;
+    gap: 14px;
   }
 
-  .project-card {
-    padding: 24px;
-  }
+  .project-card { padding: 24px; }
 
-  .project-card__title {
-    font-size: clamp(22px, 2.5vw, 32px);
-  }
+  .project-card__title { font-size: clamp(22px, 2.2vw, 30px); }
 
-  .project-card__sub {
-    font-size: 12px;
-    max-width: 100%;
-  }
+  .project-card__sub { font-size: 12px; max-width: 100%; }
 }
 
 /* ── Reduced Motion ─────────────────────────── */
