@@ -1,6 +1,5 @@
 /* =============================================
-   burakterzi.de – Main Stylesheet
-   Style inspired by: poch.studio
+   burakterzi.ai – Main Stylesheet
    ============================================= */
 
 /* Google Fonts */
@@ -19,9 +18,10 @@
   --color-text-muted:   #ffffff80;     /* 50% white — muted text         */
   --color-text-dark:    #000000;       /* text on light surfaces         */
 
-  --color-accent-cream: #fff6c6;       /* primary accent — cream/yellow  */
-  --color-accent-pink:  #ffa5c6;       /* secondary accent — pink        */
-  --color-accent-blue:  #416afc;       /* tertiary accent — blue         */
+  --color-accent:        #a78bfa;       /* primary accent — violet        */
+  --color-accent-light:  #c4b5fd;      /* light violet                   */
+  --color-accent-deep:   #6d28d9;      /* deep violet                    */
+  --color-accent-grad:   linear-gradient(135deg, #c4b5fd 0%, #818cf8 50%, #a78bfa 100%);
 
   /* ── Typography ──────────────────────────── */
   --font-display:   'DM Sans', sans-serif;   /* headings, display  */
