@@ -164,9 +164,24 @@ body {
 .services {
   flex-shrink: 0;
   overflow: hidden;
+  position: relative;
+  padding: 8px 0;
   -webkit-mask: linear-gradient(to right, transparent 0%, black 12%, black 88%, transparent 100%);
   mask: linear-gradient(to right, transparent 0%, black 12%, black 88%, transparent 100%);
 }
+
+.services::before,
+.services::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(139, 92, 246, 0.4) 30%, rgba(167, 139, 250, 0.6) 50%, rgba(139, 92, 246, 0.4) 70%, transparent);
+}
+
+.services::before { top: 0; }
+.services::after  { bottom: 0; }
 
 .services__marquee {
   overflow: hidden;
